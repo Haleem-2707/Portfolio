@@ -143,6 +143,7 @@ img {
           justify-content: space-between;
   z-index: 1000;
   background: #fec544;
+  position: fixed;
 }
 
 .header .logo {
