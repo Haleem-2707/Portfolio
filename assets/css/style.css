@@ -124,6 +124,7 @@ img {
 
 
 .header {
+  display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -142,14 +143,15 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1000;
-  background: #fec544;
+  background: #f1ab07;
   position: fixed;
 }
 
 .header .logo {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: white;
   text-transform: capitalize;
+  margin-left: -100px;
 }
 
 .header .logo span {
@@ -157,17 +159,20 @@ img {
 }
 
 .header .navbar a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white;
   text-transform: capitalize;
   margin: 0 1rem;
   cursor: pointer;
+  margin-right: 10px;
   text-decoration: none;
   position: sticky;
+  text-align: right;
 }
 
 .header .navbar a:hover {
-  color: yellow;
+  color: rgb(49, 46, 46);
+  transition: 0.5s;
 }
 
 .header .icons div {
@@ -240,6 +245,10 @@ img {
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+}
+
+.home .home-content .stack {
+  color: orange ;
 }
 
 .social-media a{
@@ -1302,6 +1311,7 @@ canvas {
 @media screen and (max-width: 991px) {
   .st-section-heading.st-style1 .st-section-heading-subtitle {
     display: none;
+    background-color: red;
   }
 }
 
@@ -1332,6 +1342,9 @@ canvas {
 
 .st-text-block.st-style1 .st-text-block-text p {
   margin-bottom: 18px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
 }
 
 .st-text-block.st-style1 .st-text-block-btn {
@@ -1340,6 +1353,9 @@ canvas {
 
 .st-text-block-details li {
   margin-bottom: 14px;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
 }
 
 .st-text-block-details li :last-child {
@@ -2876,6 +2892,15 @@ canvas {
   section {
     padding: 3rem 2rem;
   }
+
+ .header .logo {
+  font-size: 1.6rem;
+  color: rgb(5, 5, 39);
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
   .header #menu-btn {
     display: inline-block;
   }
@@ -2884,21 +2909,39 @@ canvas {
     top: 100%;
     left: 0;
     right: 0;
-    background: black;
+    background: white;
     border-top: var(--border);
     border-bottom: var(--border);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     -webkit-transition: .2s linear;
     transition: .2s linear;
+    border-top: 2px solid rgb(0, 0, 0);
+    box-shadow: 20px 20px 20px black;
+   
   }
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
-    display: block;
-    margin: 2rem;
+    display: inline;
+    margin: 0.7rem;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
   }
+
+  .home {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+    margin-top: 170px;
+  }
+
 }
 
